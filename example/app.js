@@ -23,7 +23,7 @@ button.addEventListener('click', function(e) {
 	});
 	
 	TiMessageDialog.recipients = ["+639176490093"];
-	TiMessageDialog.message = "";
+	TiMessageDialog.message = "This is a sample message";
 	TiMessageDialog.attachmentPath = Titanium.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory + "KS_nav_ui.png").nativePath;
 	TiMessageDialog.attachmentName = "KS_nav_ui.png";
 	
