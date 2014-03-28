@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Rey Bumalay
+license: Specify your license
+copyright: Copyright (c) 2014 by Your Company
+
+
+# these should not be edited
+name: TiMessage
+moduleid: com.limechalk.timessage
+guid: 4373af33-9596-4983-93f6-da23990d3cef
+platform: iphone
+minsdk: 3.2.2.GA
