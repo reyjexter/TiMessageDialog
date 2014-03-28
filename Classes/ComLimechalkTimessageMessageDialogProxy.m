@@ -89,19 +89,35 @@
 {
     switch (result) {
         case MessageComposeResultCancelled:
+        {
+            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   NUMBOOL(NO), @"success",
+                                   @"Message dialog cancelled", @"message",
+                                   nil];
+            
+            [self fireEvent:@"cancelled" withObject:event];
             break;
+        }
             
         case MessageComposeResultFailed:
         {
-            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed sending message" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [warningAlert show];
+            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   NUMBOOL(NO), @"success",
+                                   @"Failed sending SMS/MMS", @"message",
+                                   nil];
+            
+            [self fireEvent:@"error" withObject:event];
             break;
         }
             
         case MessageComposeResultSent:
         {
-            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Message sent" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [warningAlert show];
+            NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   NUMBOOL(YES), @"success",
+                                   @"SMS/MMS sent successfully!", @"message",
+                                   nil];
+            
+            [self fireEvent:@"complete" withObject:event];
             
             break;
         }
