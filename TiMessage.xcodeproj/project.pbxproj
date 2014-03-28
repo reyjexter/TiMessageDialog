@@ -26,8 +26,9 @@
 		24DD6CFA1134B3F500162E58 /* ComLimechalkTimessageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComLimechalkTimessageModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.m */; };
-		73C7F2D018E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C7F2CE18E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.h */; };
-		73C7F2D118E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C7F2CF18E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.m */; };
+		7348FE0218E5DE7A0018F82E /* ComLimechalkTimessageMessageDialogProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7348FDFF18E5DE7A0018F82E /* ComLimechalkTimessageMessageDialogProxy.h */; };
+		7348FE0318E5DE7A0018F82E /* ComLimechalkTimessage_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7348FE0018E5DE7A0018F82E /* ComLimechalkTimessage_Prefix.pch */; };
+		7348FE0518E5DEF90018F82E /* ComLimechalkTimessageMessageDialogProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348FE0418E5DEF90018F82E /* ComLimechalkTimessageMessageDialogProxy.m */; };
 		AA747D9F0F9514B9006C5449 /* ComLimechalkTimessage_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComLimechalkTimessage_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -48,8 +49,9 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComLimechalkTimessageModuleAssets.h; path = Classes/ComLimechalkTimessageModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComLimechalkTimessageModuleAssets.m; path = Classes/ComLimechalkTimessageModuleAssets.m; sourceTree = "<group>"; };
-		73C7F2CE18E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComLimechalkTimessageMessageDialogProxy.h; sourceTree = "<group>"; };
-		73C7F2CF18E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComLimechalkTimessageMessageDialogProxy.m; sourceTree = "<group>"; };
+		7348FDFF18E5DE7A0018F82E /* ComLimechalkTimessageMessageDialogProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComLimechalkTimessageMessageDialogProxy.h; path = Classes/ComLimechalkTimessageMessageDialogProxy.h; sourceTree = "<group>"; };
+		7348FE0018E5DE7A0018F82E /* ComLimechalkTimessage_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComLimechalkTimessage_Prefix.pch; path = Classes/ComLimechalkTimessage_Prefix.pch; sourceTree = "<group>"; };
+		7348FE0418E5DEF90018F82E /* ComLimechalkTimessageMessageDialogProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComLimechalkTimessageMessageDialogProxy.m; path = Classes/ComLimechalkTimessageMessageDialogProxy.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ComLimechalkTimessage_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComLimechalkTimessage_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libComLimechalkTimessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComLimechalkTimessage.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,12 +99,13 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7348FE0418E5DEF90018F82E /* ComLimechalkTimessageMessageDialogProxy.m */,
+				7348FDFF18E5DE7A0018F82E /* ComLimechalkTimessageMessageDialogProxy.h */,
+				7348FE0018E5DE7A0018F82E /* ComLimechalkTimessage_Prefix.pch */,
 				24DE9E0F11C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* ComLimechalkTimessageModule.h */,
 				24DD6CF81134B3F500162E58 /* ComLimechalkTimessageModule.m */,
-				73C7F2CE18E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.h */,
-				73C7F2CF18E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -124,8 +127,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* ComLimechalkTimessage_Prefix.pch in Headers */,
-				73C7F2D018E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.h in Headers */,
 				24DD6CF91134B3F500162E58 /* ComLimechalkTimessageModule.h in Headers */,
+				7348FE0218E5DE7A0018F82E /* ComLimechalkTimessageMessageDialogProxy.h in Headers */,
+				7348FE0318E5DE7A0018F82E /* ComLimechalkTimessage_Prefix.pch in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +205,7 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* ComLimechalkTimessageModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* ComLimechalkTimessageModuleAssets.m in Sources */,
-				73C7F2D118E5B283009DE1FD /* ComLimechalkTimessageMessageDialogProxy.m in Sources */,
+				7348FE0518E5DEF90018F82E /* ComLimechalkTimessageMessageDialogProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

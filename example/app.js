@@ -24,8 +24,10 @@ button.addEventListener('click', function(e) {
 	
 	TiMessageDialog.recipients = ["+639176490093"];
 	TiMessageDialog.message = "This is a sample message";
+	
+	// just remove this if you don't want any attachments 
 	TiMessageDialog.attachmentPath = Titanium.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory + "KS_nav_ui.png").nativePath;
-	TiMessageDialog.attachmentName = "KS_nav_ui.png";
+	TiMessageDialog.attachmentName = "KS_nav_ui.png"; 
 	
 	// open the dialog
 	TiMessageDialog.openDialog({animated: false});
