@@ -101,6 +101,8 @@
             
         case MessageComposeResultFailed:
         {
+            NSLog(@"[TiMessageDialog Module] Showing messageController now");
+            
             NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys:
                                    NUMBOOL(NO), @"success",
                                    @"Failed sending SMS/MMS", @"message",
@@ -127,6 +129,10 @@
     }
     
     [messageController dismissViewControllerAnimated:YES completion:nil];
+    
+    [self forgetSelf];
+    
+	[self autorelease];
 }
 
 @end
