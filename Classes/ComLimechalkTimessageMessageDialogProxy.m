@@ -87,6 +87,10 @@
 
 - (void)messageComposeViewController:(MFMessageComposeViewController *)messageController didFinishWithResult:(MessageComposeResult) result
 {
+    [[TiApp app] hideModalController:messageController animated:YES];
+	[messageController autorelease];
+	messageController = nil;
+    
     switch (result) {
         case MessageComposeResultCancelled:
         {
